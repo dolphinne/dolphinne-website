@@ -115,7 +115,7 @@ const HeroHeader = () => {
             isSticky ? "sticky-top shadow-lg" : ""
           }`}
         >
-          <a href="index.html" className="navbar-brand p-0">
+          <Link to="/" className="navbar-brand p-0">
             <h1 className="m-0">
               Dolphinne.
               {isSticky ? (
@@ -124,7 +124,7 @@ const HeroHeader = () => {
                 <img src="favicon.png" alt="" style={{ width: 70 }} />
               )}
             </h1>
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
