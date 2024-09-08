@@ -10,6 +10,7 @@ import Team from "../components/LandingPage/Team";
 import LatestBlogs from "../components/LandingPage/LatestBlogs";
 import Brands from "../components/LandingPage/Brands";
 import WOW from "wow.js";
+import ServicesSection from "../components/Services/ServicesSection";
 
 const LandingPage = () => {
   //   new WOW().init();
@@ -20,7 +21,7 @@ const LandingPage = () => {
       <Stats />
       <AboutUs />
       <WhyChooseUs />
-      <OurServices />
+      <ServicesSection />
       <RequestQuote />
       <Testimonials />
       <Team />

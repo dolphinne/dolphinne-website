@@ -117,7 +117,7 @@ const Header = ({ pageTitle, pageRoute }) => {
         >
           <Link to="/" className="navbar-brand p-0">
             <h1 className="m-0">
-              Dolphinne.
+              dolphinne.
               {isSticky ? (
                 <img src="favicon2.png" alt="" style={{ width: 70 }} />
               ) : (

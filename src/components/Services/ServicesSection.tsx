@@ -24,8 +24,8 @@ const ServicesSection = () => {
               </div>
               <h4 className="mb-3">Web Development</h4>
               <p className="m-0">
-                Amet justo dolor lorem kasd amet magna sea stet eos vero lorem
-                ipsum dolore sed
+                Create a strong online presence with our expert web development
+                services.
               </p>
               <a className="btn btn-lg btn-primary rounded" href="">
                 <i className="bi bi-arrow-right"></i>
@@ -39,8 +39,8 @@ const ServicesSection = () => {
               </div>
               <h4 className="mb-3">Android Development</h4>
               <p className="m-0">
-                Amet justo dolor lorem kasd amet magna sea stet eos vero lorem
-                ipsum dolore sed
+                Develop robust and user-friendly Android applications to enhance
+                your business operations.
               </p>
               <a className="btn btn-lg btn-primary rounded" href="">
                 <i className="bi bi-arrow-right"></i>
@@ -54,8 +54,23 @@ const ServicesSection = () => {
               </div>
               <h4 className="mb-3">iOS Development</h4>
               <p className="m-0">
-                Amet justo dolor lorem kasd amet magna sea stet eos vero lorem
-                ipsum dolore sed
+                Build innovative iOS applications that provide seamless user
+                experiences.
+              </p>
+              <a className="btn btn-lg btn-primary rounded" href="">
+                <i className="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+            <div className="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+              <div className="service-icon">
+                <i className="fa fa-magic text-white"></i>
+              </div>
+              <h4 className="mb-3">Artificial Intelligence</h4>
+              <p className="m-0">
+                Integrate AI solutions to automate processes, enhance
+                decision-making, and drive innovation.
               </p>
               <a className="btn btn-lg btn-primary rounded" href="">
                 <i className="bi bi-arrow-right"></i>
@@ -69,8 +84,7 @@ const ServicesSection = () => {
               </div>
               <h4 className="mb-3">SEO Optimization</h4>
               <p className="m-0">
-                Amet justo dolor lorem kasd amet magna sea stet eos vero lorem
-                ipsum dolore sed
+                Improve your search engine rankings and attract more customers.
               </p>
               <a className="btn btn-lg btn-primary rounded" href="">
                 <i className="bi bi-arrow-right"></i>
@@ -84,8 +98,37 @@ const ServicesSection = () => {
               </div>
               <h4 className="mb-3">Data Analytics</h4>
               <p className="m-0">
-                Amet justo dolor lorem kasd amet magna sea stet eos vero lorem
-                ipsum dolore sed
+                Leverage data to make informed decisions and drive growth.
+              </p>
+              <a className="btn btn-lg btn-primary rounded" href="">
+                <i className="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+            <div className="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+              <div className="service-icon">
+                <i className="fa fa-pen-nib text-white"></i>
+              </div>
+              <h4 className="mb-3">Graphic Design</h4>
+              <p className="m-0">
+                Create visually stunning graphics that capture your brand’s
+                essence and engage your audience.
+              </p>
+              <a className="btn btn-lg btn-primary rounded" href="">
+                <i className="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+            <div className="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+              <div className="service-icon">
+                <i className="fa fa-cloud text-white"></i>
+              </div>
+              <h4 className="mb-3">Cloud Solutions</h4>
+              <p className="m-0">
+                Implement secure and scalable cloud services to enhance your
+                business operations and data management.
               </p>
               <a className="btn btn-lg btn-primary rounded" href="">
                 <i className="bi bi-arrow-right"></i>

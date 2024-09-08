@@ -1,6 +1,57 @@
 import React from "react";
 import Slider from "react-slick";
 
+const testimonials = [
+  {
+    name: "John Smith",
+    title: "CEO, Tech Innovators",
+    quote:
+      "The team at the dolphinne transformed our outdated website into a modern, user-friendly platform. Our online traffic has increased significantly, and we've received numerous compliments from our clients.",
+  },
+  {
+    name: "Emily Johnson",
+    title: "Marketing Director, Creative Solutions",
+    quote:
+      "Thanks to the dolphinne's SEO services, our search engine rankings have improved dramatically. We've seen a noticeable increase in organic traffic and lead generation.",
+  },
+  {
+    name: "Michael Brown",
+    title: "Founder, Startup Hub",
+    quote:
+      "The app development services provided by the dolphinne were exceptional. The app is intuitive, fast, and has received great feedback from our users. Highly recommend their services!",
+  },
+  {
+    name: "Sarah Davis",
+    title: "Operations Manager, Retail Experts",
+    quote:
+      "We were struggling with data management until we partnered with the dolphinne. Their data analytics solutions have streamlined our operations and provided valuable insights into our business.",
+  },
+  {
+    name: "David Wilson",
+    title: "IT Director, Global Enterprises",
+    quote:
+      "Cyber security was a major concern for us, but the dolphinne provided robust solutions that have given us peace of mind. Their team is knowledgeable and always available to assist.",
+  },
+  {
+    name: "Jessica Lee",
+    title: "Owner, Boutique Designs",
+    quote:
+      "The graphic design services from the dolphinne have been outstanding. Our brand's visual identity has never looked better, and our customers love the new look.",
+  },
+  {
+    name: "Robert Martinez",
+    title: "Project Manager, Construction Pros",
+    quote:
+      "Implementing cloud solutions with the dolphinne has been a game-changer for our business. The transition was smooth, and the benefits have been immense.",
+  },
+  {
+    name: "Linda Thompson",
+    title: "Head of Development, AI Innovations",
+    quote:
+      "Integrating AI solutions into our processes has significantly improved our efficiency and decision-making. The dolphinne provided excellent support throughout the implementation.",
+  },
+];
+
 const Testimonials = () => {
   const settings = {
     dots: true,
@@ -9,7 +60,8 @@ const Testimonials = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
-    autoplay: true,
+    // autoplay: true,
+    // autoplaySpeed: 10000,
     pauseOnHover: false,
     responsive: [
       {
@@ -54,82 +106,26 @@ const Testimonials = () => {
             </h1>
           </div>
           <Slider {...settings}>
-            <div className="px-0 px-md-3">
-              <div className="testimonial-item bg-light my-4 item">
-                <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                  <img
-                    className="img-fluid rounded"
-                    src="img/testimonial-1.jpg"
-                    style={{ width: 60, height: 60 }}
-                  />
-                  <div className="ps-4">
-                    <h4 className="text-primary mb-1">Client Name</h4>
-                    <small className="text-uppercase">Profession</small>
+            {testimonials.map((testimonial) => (
+              <div className="px-0 px-md-3">
+                <div className="testimonial-item bg-light my-4 item">
+                  <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                    <img
+                      className="img-fluid rounded"
+                      src="img/testimonial-1.jpg"
+                      style={{ width: 60, height: 60 }}
+                    />
+                    <div className="ps-4">
+                      <h4 className="text-primary mb-1">{testimonial.name}</h4>
+                      <small className="text-uppercase">
+                        {testimonial.title}
+                      </small>
+                    </div>
                   </div>
-                </div>
-                <div className="pt-4 pb-5 px-5">
-                  Dolor et eos labore, stet justo sed est sed. Diam sed sed
-                  dolor stet amet eirmod eos labore diam
+                  <div className="pt-4 pb-5 px-5">{testimonial.quote}</div>
                 </div>
               </div>
-            </div>
-            <div className="px-0 px-md-3">
-              <div className="testimonial-item bg-light my-4 item">
-                <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                  <img
-                    className="img-fluid rounded"
-                    src="img/testimonial-2.jpg"
-                    style={{ width: 60, height: 60 }}
-                  />
-                  <div className="ps-4">
-                    <h4 className="text-primary mb-1">Client Name</h4>
-                    <small className="text-uppercase">Profession</small>
-                  </div>
-                </div>
-                <div className="pt-4 pb-5 px-5">
-                  Dolor et eos labore, stet justo sed est sed. Diam sed sed
-                  dolor stet amet eirmod eos labore diam
-                </div>
-              </div>
-            </div>
-            <div className="px-0 px-md-3">
-              <div className="testimonial-item bg-light my-4 item">
-                <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                  <img
-                    className="img-fluid rounded"
-                    src="img/testimonial-3.jpg"
-                    style={{ width: 60, height: 60 }}
-                  />
-                  <div className="ps-4">
-                    <h4 className="text-primary mb-1">Client Name</h4>
-                    <small className="text-uppercase">Profession</small>
-                  </div>
-                </div>
-                <div className="pt-4 pb-5 px-5">
-                  Dolor et eos labore, stet justo sed est sed. Diam sed sed
-                  dolor stet amet eirmod eos labore diam
-                </div>
-              </div>
-            </div>
-            <div className="px-0 px-md-3">
-              <div className="testimonial-item bg-light my-4 item">
-                <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                  <img
-                    className="img-fluid rounded"
-                    src="img/testimonial-4.jpg"
-                    style={{ width: 60, height: 60 }}
-                  />
-                  <div className="ps-4">
-                    <h4 className="text-primary mb-1">Client Name</h4>
-                    <small className="text-uppercase">Profession</small>
-                  </div>
-                </div>
-                <div className="pt-4 pb-5 px-5">
-                  Dolor et eos labore, stet justo sed est sed. Diam sed sed
-                  dolor stet amet eirmod eos labore diam
-                </div>
-              </div>
-            </div>
+            ))}
           </Slider>
         </div>
       </div>

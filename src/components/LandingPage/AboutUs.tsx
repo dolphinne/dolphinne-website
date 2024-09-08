@@ -20,10 +20,11 @@ const AboutUs = () => {
                 </h1>
               </div>
               <p className="mb-4">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum et
-                tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum
-                et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo
-                justo et tempor eirmod magna dolore erat amet
+                Welcome to the dolphinne, where innovation meets excellence.
+                With a decade of experience in the IT industry, we are committed
+                to delivering top-notch solutions tailored to your business
+                needs. Our team of experts is dedicated to providing exceptional
+                service and support, ensuring your success in the digital world.
               </p>
               <div className="row g-0 mb-3">
                 <div className="col-sm-6 wow zoomIn" data-wow-delay="0.2s">

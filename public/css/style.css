@@ -421,13 +421,8 @@ h6,
   z-index: 1;
 }
 
-.testimonial-carousel .owl-item .testimonial-item {
-  transition: 0.5s;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item {
-  background: #ffffff !important;
-  box-shadow: 0 0 30px #dddddd;
+.testimonial-item {
+  min-height: 400px;
 }
 
 /*** Team ***/
@@ -557,4 +552,12 @@ h6,
     max-width: 70%;
     margin: auto;
   }
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: 100% !important;
 }

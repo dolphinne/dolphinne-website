@@ -22,7 +22,7 @@ const RequestQuote = () => {
                 <div className="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
                   <h5 className="mb-4">
                     <i className="fa fa-reply text-primary me-3"></i>Reply
-                    within 24 hours
+                    within 8 hours
                   </h5>
                 </div>
                 <div className="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
@@ -33,12 +33,12 @@ const RequestQuote = () => {
                 </div>
               </div>
               <p className="mb-4">
-                Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd
-                ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo
-                rebum sea invidunt voluptua. Eos vero eos vero ea et dolore
-                eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores
-                magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus
-                sed.
+                We understand the importance of timely communication. Our team
+                ensures that all inquiries are addressed within 8 hours, so you
+                can get the information you need without delay. Our customer
+                support team is available around the clock to assist you with
+                any questions or concerns. Whether it’s day or night, we’re here
+                to help.
               </p>
               <div
                 className="d-flex align-items-center mt-2 wow zoomIn"
