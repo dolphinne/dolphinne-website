@@ -18,7 +18,7 @@ const Testimonials = () => {
           slidesToShow: 2, // Show 2 slides
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -26,7 +26,6 @@ const Testimonials = () => {
         settings: {
           slidesToShow: 1, // Show 1 slide
           slidesToScroll: 1,
-          dots: true,
         },
       },
       {
@@ -34,7 +33,6 @@ const Testimonials = () => {
         settings: {
           slidesToShow: 1, // Show 1 slide
           slidesToScroll: 1,
-          dots: true,
         },
       },
     ],
