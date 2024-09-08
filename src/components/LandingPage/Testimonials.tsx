@@ -11,11 +11,41 @@ const Testimonials = () => {
     arrows: false,
     autoplay: true,
     pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 1024, // For screen widths up to 1024px
+        settings: {
+          slidesToShow: 2, // Show 2 slides
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 767, // For screen widths up to 600px
+        settings: {
+          slidesToShow: 1, // Show 1 slide
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 480, // For screen widths up to 480px
+        settings: {
+          slidesToShow: 1, // Show 1 slide
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+    ],
   };
   return (
     <>
-      <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div className="container py-5">
+      <div
+        className="container-fluid py-lg-5 py-3 wow fadeInUp"
+        data-wow-delay="0.1s"
+      >
+        <div className="container py-lg-5 py-3">
           <div
             className="section-title text-center position-relative pb-3 mb-4 mx-auto"
             style={{ maxWidth: 600 }}
@@ -26,7 +56,7 @@ const Testimonials = () => {
             </h1>
           </div>
           <Slider {...settings}>
-            <div className="px-3">
+            <div className="px-0 px-md-3">
               <div className="testimonial-item bg-light my-4 item">
                 <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                   <img
@@ -45,7 +75,7 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-            <div className="px-3">
+            <div className="px-0 px-md-3">
               <div className="testimonial-item bg-light my-4 item">
                 <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                   <img
@@ -64,7 +94,7 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-            <div className="px-3">
+            <div className="px-0 px-md-3">
               <div className="testimonial-item bg-light my-4 item">
                 <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                   <img
@@ -83,7 +113,7 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-            <div className="px-3">
+            <div className="px-0 px-md-3">
               <div className="testimonial-item bg-light my-4 item">
                 <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                   <img

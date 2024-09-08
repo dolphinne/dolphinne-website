@@ -5,8 +5,8 @@ const Stats = () => {
   return (
     <>
       {/* <!-- Facts Start --> */}
-      <div className="container-fluid facts py-5 pt-lg-0 animate__animated animate__fadeInUp">
-        <div className="container py-5 pt-lg-0">
+      <div className="container-fluid facts py-lg-5 py-3 pt-lg-0 animate__animated animate__fadeInUp">
+        <div className="container py-lg-5 py-3 pt-lg-0">
           <div className="row gx-0">
             <div className="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
               <div

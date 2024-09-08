@@ -171,7 +171,12 @@ h6,
   }
 
   .navbar-dark .navbar-brand h1 {
-    color: var(--primary);
+    color: #000;
+    font-size: 24px;
+
+    img {
+      max-width: 40px;
+    }
   }
 }
 
@@ -246,6 +251,13 @@ h6,
 .carousel-control-prev,
 .carousel-control-next {
   width: 10%;
+}
+
+@media (max-width: 991px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
 }
 
 .carousel-control-prev-icon,
@@ -518,5 +530,31 @@ h6,
 @media (min-width: 767.98px) {
   .footer-about {
     margin-bottom: -75px;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-item {
+    height: 80vh;
+  }
+  .carousel-item > img {
+    object-fit: cover;
+    object-position: 20% center;
+  }
+  .sticky-top.navbar-dark .navbar-nav .nav-link {
+    margin-left: 0;
+    text-align: center;
+  }
+  .navbar .navbar-collapse {
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+  }
+  .navbar .navbar-collapse .btn {
+    margin: auto !important;
+    display: block;
+  }
+  .slick-slide img {
+    max-width: 70%;
+    margin: auto;
   }
 }

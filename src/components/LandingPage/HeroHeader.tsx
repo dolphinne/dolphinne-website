@@ -3,14 +3,18 @@ import { Link, NavLink } from "react-router-dom";
 
 const HeroHeader = () => {
   const [isVisible, setIsVisible] = useState(true);
-  const [isSticky, setSticky] = useState(false);
+  const [isSticky, setSticky] = useState(
+    window.innerWidth < 768 ? true : false
+  );
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 45) {
-        setSticky(true);
-      } else {
-        setSticky(false);
+      if (window.innerWidth > 767) {
+        if (window.scrollY > 45) {
+          setSticky(true);
+        } else {
+          setSticky(false);
+        }
       }
     };
 
@@ -44,7 +48,7 @@ const HeroHeader = () => {
         <div className="spinner"></div>
       </div>
 
-      <div className="container-fluid bg-primary px-5 d-none d-lg-block">
+      <div className="container-fluid bg-primary px-lg-5 px-3 d-none d-lg-block">
         <div className="row gx-0">
           <div className="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
             <div
@@ -107,7 +111,7 @@ const HeroHeader = () => {
       {/* <!-- Navbar & Carousel Start --> */}
       <div className="container-fluid position-relative p-0">
         <nav
-          className={`navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0 ${
+          className={`navbar navbar-expand-lg navbar-dark px-lg-5 px-3 py-3 py-lg-0 ${
             isSticky ? "sticky-top shadow-lg" : ""
           }`}
         >
@@ -188,7 +192,11 @@ const HeroHeader = () => {
         >
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img className="w-100" src="img/carousel-1.jpg" alt="Image" />
+              <img
+                className="w-100 h-100"
+                src="img/carousel-1.jpg"
+                alt="Image"
+              />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <div className="p-3" style={{ maxWidth: 900 }}>
                   <h5 className="text-white text-uppercase mb-3 animate__animated animate__fadeIn">
@@ -213,7 +221,11 @@ const HeroHeader = () => {
               </div>
             </div>
             <div className="carousel-item">
-              <img className="w-100" src="img/carousel-2.jpg" alt="Image" />
+              <img
+                className="w-100 h-100"
+                src="img/carousel-2.jpg"
+                alt="Image"
+              />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <div className="p-3" style={{ maxWidth: 900 }}>
                   <h5 className="text-white text-uppercase mb-3 animated slideInDown">

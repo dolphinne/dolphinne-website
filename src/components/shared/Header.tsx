@@ -3,14 +3,18 @@ import { Link, NavLink } from "react-router-dom";
 
 const Header = ({ pageTitle, pageRoute }) => {
   const [isVisible, setIsVisible] = useState(true);
-  const [isSticky, setSticky] = useState(false);
+  const [isSticky, setSticky] = useState(
+    window.innerWidth < 768 ? true : false
+  );
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 45) {
-        setSticky(true);
-      } else {
-        setSticky(false);
+      if (window.innerWidth > 767) {
+        if (window.scrollY > 45) {
+          setSticky(true);
+        } else {
+          setSticky(false);
+        }
       }
     };
 
@@ -44,7 +48,7 @@ const Header = ({ pageTitle, pageRoute }) => {
         <div className="spinner"></div>
       </div>
 
-      <div className="container-fluid bg-dark px-5 d-none d-lg-block">
+      <div className="container-fluid bg-dark px-lg-5 px-3 d-none d-lg-block">
         <div className="row gx-0">
           <div className="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
             <div
@@ -107,7 +111,7 @@ const Header = ({ pageTitle, pageRoute }) => {
       {/* <!-- Navbar Start --> */}
       <div className="container-fluid position-relative p-0">
         <nav
-          className={`navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0 ${
+          className={`navbar navbar-expand-lg navbar-dark px-lg-5 px-3 py-3 py-lg-0 ${
             isSticky ? "sticky-top shadow-lg" : ""
           }`}
         >
@@ -183,7 +187,7 @@ const Header = ({ pageTitle, pageRoute }) => {
 
         <div
           className="container-fluid bg-primary py-5 bg-header"
-          style={{ marginBottom: 90 }}
+          // style={{ marginBottom: 90 }}
         >
           <div className="row py-5">
             <div className="col-12 pt-lg-5 mt-lg-5 text-center">

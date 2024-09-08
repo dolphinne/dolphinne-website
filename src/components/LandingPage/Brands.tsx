@@ -11,10 +11,29 @@ const Brands = () => {
     arrows: false,
     autoplay: true,
     pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 1024, // For screen widths up to 1024px
+        settings: {
+          slidesToShow: 3, // Show 2 slides
+          slidesToScroll: 1,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 767, // For screen widths up to 1024px
+        settings: {
+          slidesToShow: 2, // Show 2 slides
+        },
+      },
+    ],
   };
   return (
-    <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-      <div className="container py-5 mb-5">
+    <div
+      className="container-fluid py-lg-5 py-3 wow fadeInUp"
+      data-wow-delay="0.1s"
+    >
+      <div className="container py-lg-5 py-3">
         <div className="bg-white">
           <Slider {...settings}>
             <div className="px-3">

@@ -2,8 +2,11 @@ import React from "react";
 
 const BlogsSection = () => {
   return (
-    <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-      <div className="container py-5">
+    <div
+      className="container-fluid py-lg-5 py-3 wow fadeInUp"
+      data-wow-delay="0.1s"
+    >
+      <div className="container py-lg-5 py-3">
         <div className="row g-5">
           <div className="col-lg-8">
             <div className="row g-5">
