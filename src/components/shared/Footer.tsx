@@ -1,5 +1,7 @@
 import React from "react";
 import Brands from "../LandingPage/Brands";
+import { constants } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,27 +15,47 @@ const Footer = () => {
           <div className="row gx-5">
             <div className="col-lg-4 col-md-6 footer-about">
               <div className="d-flex flex-column justify-content-center h-100 bg-primary p-4">
-                <a href="index.html" className="navbar-brand">
+                <Link to="/" className="navbar-brand">
                   <h1 className="m-0 text-white">
                     Dolphinne.
                     <img src="favicon.png" alt="" style={{ width: 70 }} />
                   </h1>
-                </a>
-                <p className="mt-3 mb-4">
+                </Link>
+                <p className="my-4">
                   Lorem diam sit erat dolor elitr et, diam lorem justo amet
                   clita stet eos sit. Elitr dolor duo lorem, elitr clita ipsum
                   sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.
                 </p>
-                <form action="">
-                  <div className="input-group">
-                    <input
-                      type="text"
-                      className="form-control border-white p-3"
-                      placeholder="Your Email"
-                    />
-                    <button className="btn btn-dark">Sign Up</button>
-                  </div>
-                </form>
+                <div className="d-flex mt-4">
+                  <a
+                    className="btn btn-primary me-3"
+                    style={{ borderRadius: 6, fontSize: 20 }}
+                    href="#"
+                  >
+                    <i className="fab fa-twitter fw-normal"></i>
+                  </a>
+                  <a
+                    className="btn btn-primary me-3"
+                    href="#"
+                    style={{ borderRadius: 6, fontSize: 20 }}
+                  >
+                    <i className="fab fa-facebook-f fw-normal"></i>
+                  </a>
+                  <a
+                    className="btn btn-primary me-3"
+                    href="#"
+                    style={{ borderRadius: 6, fontSize: 20 }}
+                  >
+                    <i className="fab fa-linkedin-in fw-normal"></i>
+                  </a>
+                  <a
+                    className="btn btn-primary"
+                    href="#"
+                    style={{ borderRadius: 6, fontSize: 20 }}
+                  >
+                    <i className="fab fa-instagram fw-normal"></i>
+                  </a>
+                </div>
               </div>
             </div>
             <div className="col-lg-8 col-md-6">
@@ -44,29 +66,15 @@ const Footer = () => {
                   </div>
                   <div className="d-flex mb-2">
                     <i className="bi bi-geo-alt text-primary me-2"></i>
-                    <p className="mb-0">123 Street, New York, USA</p>
+                    <p className="mb-0">{constants.address}</p>
                   </div>
                   <div className="d-flex mb-2">
                     <i className="bi bi-envelope-open text-primary me-2"></i>
-                    <p className="mb-0">info@example.com</p>
+                    <p className="mb-0">{constants.email}</p>
                   </div>
                   <div className="d-flex mb-2">
                     <i className="bi bi-telephone text-primary me-2"></i>
-                    <p className="mb-0">+012 345 67890</p>
-                  </div>
-                  <div className="d-flex mt-4">
-                    <a className="btn btn-primary btn-square me-2" href="#">
-                      <i className="fab fa-twitter fw-normal"></i>
-                    </a>
-                    <a className="btn btn-primary btn-square me-2" href="#">
-                      <i className="fab fa-facebook-f fw-normal"></i>
-                    </a>
-                    <a className="btn btn-primary btn-square me-2" href="#">
-                      <i className="fab fa-linkedin-in fw-normal"></i>
-                    </a>
-                    <a className="btn btn-primary btn-square" href="#">
-                      <i className="fab fa-instagram fw-normal"></i>
-                    </a>
+                    <p className="mb-0">{constants.telephone}</p>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">

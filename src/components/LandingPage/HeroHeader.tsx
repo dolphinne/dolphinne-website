@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import Topbar from "../shared/Topbar";
 
 const HeroHeader = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -48,64 +49,7 @@ const HeroHeader = () => {
         <div className="spinner"></div>
       </div>
 
-      <div className="container-fluid bg-primary px-lg-5 px-3 d-none d-lg-block">
-        <div className="row gx-0">
-          <div className="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-            <div
-              className="d-inline-flex align-items-center"
-              style={{ height: 45 }}
-            >
-              <small className="me-3 text-light">
-                <i className="fa fa-map-marker-alt me-2"></i>123 Street, New
-                York, USA
-              </small>
-              <small className="me-3 text-light">
-                <i className="fa fa-phone-alt me-2"></i>+012 345 6789
-              </small>
-              <small className="text-light">
-                <i className="fa fa-envelope-open me-2"></i>info@example.com
-              </small>
-            </div>
-          </div>
-          <div className="col-lg-4 text-center text-lg-end">
-            <div
-              className="d-inline-flex align-items-center"
-              style={{ height: 45 }}
-            >
-              <a
-                className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                href=""
-              >
-                <i className="fab fa-twitter fw-normal"></i>
-              </a>
-              <a
-                className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                href=""
-              >
-                <i className="fab fa-facebook-f fw-normal"></i>
-              </a>
-              <a
-                className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                href=""
-              >
-                <i className="fab fa-linkedin-in fw-normal"></i>
-              </a>
-              <a
-                className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                href=""
-              >
-                <i className="fab fa-instagram fw-normal"></i>
-              </a>
-              <a
-                className="btn btn-sm btn-outline-light btn-sm-square rounded-circle"
-                href=""
-              >
-                <i className="fab fa-youtube fw-normal"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Topbar />
       {/* <!-- Topbar End --> */}
 
       {/* <!-- Navbar & Carousel Start --> */}
@@ -189,21 +133,22 @@ const HeroHeader = () => {
           id="header-carousel"
           className="carousel slide carousel-fade"
           data-bs-ride="carousel"
+          data-bs-pause="false"
         >
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
-                className="w-100 h-100"
-                src="img/carousel-1.jpg"
+                className="w-100 hero-carousel-img"
+                src="img/carousal-1.jpg"
                 alt="Image"
               />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                <div className="p-3" style={{ maxWidth: 900 }}>
-                  <h5 className="text-white text-uppercase mb-3 animate__animated animate__fadeIn">
-                    Creative & Innovative
+                <div className="p-3" style={{ maxWidth: 1000 }}>
+                  <h5 className="text-white text-uppercase mb-1 animate__animated animate__fadeIn">
+                    Empowering you to achieve what once seemed impossible.
                   </h5>
-                  <h1 className="display-1 text-white mb-md-4 animated zoomIn">
-                    Creative & Innovative Digital Solution
+                  <h1 className="display-2 text-white mb-md-4 animated zoomIn">
+                    Turning the Impossible into Possible.
                   </h1>
                   <a
                     href="quote.html"
@@ -222,17 +167,17 @@ const HeroHeader = () => {
             </div>
             <div className="carousel-item">
               <img
-                className="w-100 h-100"
-                src="img/carousel-2.jpg"
+                className="w-100 hero-carousel-img"
+                src="img/carousal-2.png"
                 alt="Image"
               />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                <div className="p-3" style={{ maxWidth: 900 }}>
-                  <h5 className="text-white text-uppercase mb-3 animated slideInDown">
-                    Creative & Innovative
+                <div className="p-3" style={{ maxWidth: 1000 }}>
+                  <h5 className="text-white text-uppercase mb-1 animated slideInDown">
+                    Leading the way with cutting-edge technology solutions.
                   </h5>
-                  <h1 className="display-1 text-white mb-md-4 animated zoomIn">
-                    Creative & Innovative Digital Solution
+                  <h1 className="display-2 text-white mb-md-4 animated zoomIn">
+                    Innovate, Integrate, Elevate.
                   </h1>
                   <a
                     href="quote.html"

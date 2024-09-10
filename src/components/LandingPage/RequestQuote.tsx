@@ -1,4 +1,5 @@
 import React from "react";
+import { constants } from "../utils/constants";
 
 const RequestQuote = () => {
   return (
@@ -52,7 +53,7 @@ const RequestQuote = () => {
                 </div>
                 <div className="ps-4">
                   <h5 className="mb-2">Call to ask any question</h5>
-                  <h4 className="text-primary mb-0">+012 345 6789</h4>
+                  <h4 className="text-primary mb-0">{constants.telephone}</h4>
                 </div>
               </div>
             </div>

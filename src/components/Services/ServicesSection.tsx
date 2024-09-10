@@ -1,4 +1,5 @@
 import React from "react";
+import { constants } from "../utils/constants";
 
 const ServicesSection = () => {
   return (
@@ -142,7 +143,7 @@ const ServicesSection = () => {
                 Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est
                 magna stet eirmod
               </p>
-              <h2 className="text-white mb-0">+012 345 6789</h2>
+              <h2 className="text-white mb-0">{constants.telephone}</h2>
             </div>
           </div>
         </div>

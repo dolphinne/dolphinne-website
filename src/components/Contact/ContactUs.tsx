@@ -1,4 +1,5 @@
 import React from "react";
+import { constants } from "../utils/constants";
 
 const ContactUs = () => {
   return (
@@ -30,7 +31,7 @@ const ContactUs = () => {
               </div>
               <div className="ps-4">
                 <h5 className="mb-2">Call to ask any question</h5>
-                <h4 className="text-primary mb-0">+012 345 6789</h4>
+                <h4 className="text-primary mb-0">{constants.telephone}</h4>
               </div>
             </div>
           </div>
@@ -47,7 +48,7 @@ const ContactUs = () => {
               </div>
               <div className="ps-4">
                 <h5 className="mb-2">Email to get free quote</h5>
-                <h4 className="text-primary mb-0">info@example.com</h4>
+                <h4 className="text-primary mb-0">{constants.email}</h4>
               </div>
             </div>
           </div>
@@ -64,7 +65,7 @@ const ContactUs = () => {
               </div>
               <div className="ps-4">
                 <h5 className="mb-2">Visit our office</h5>
-                <h4 className="text-primary mb-0">123 Street, NY, USA</h4>
+                <h4 className="text-primary mb-0">Ahmedabad, India</h4>
               </div>
             </div>
           </div>
@@ -115,7 +116,7 @@ const ContactUs = () => {
           <div className="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
             <iframe
               className="position-relative rounded w-100 h-100"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.34233033887!2d72.53073257588198!3d23.047907915381177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84a543cb6d77%3A0xf91c9778ae9ae269!2sSurya%20Complex%2C%20Gurukul%20Rd%2C%20Nilmani%20Society%2C%20Memnagar%2C%20Ahmedabad%2C%20Gujarat%20380052!5e0!3m2!1sen!2sin!4v1725988938823!5m2!1sen!2sin"
               frameBorder="0"
               style={{ minHeight: 350, border: 0 }}
               aria-hidden="false"

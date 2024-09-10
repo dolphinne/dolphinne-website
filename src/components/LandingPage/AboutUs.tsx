@@ -1,4 +1,5 @@
 import React from "react";
+import { constants } from "../utils/constants";
 
 const AboutUs = () => {
   return (
@@ -16,7 +17,7 @@ const AboutUs = () => {
                   About Us
                 </h5>
                 <h1 className="mb-0">
-                  The Best IT Solution With 10 Years of Experience
+                  The Best IT Solution With 8+ Years of Experience
                 </h1>
               </div>
               <p className="mb-4">
@@ -59,7 +60,7 @@ const AboutUs = () => {
                 </div>
                 <div className="ps-4">
                   <h5 className="mb-2">Call to ask any question</h5>
-                  <h4 className="text-primary mb-0">+012 345 6789</h4>
+                  <h4 className="text-primary mb-0">{constants.telephone}</h4>
                 </div>
               </div>
               <a
