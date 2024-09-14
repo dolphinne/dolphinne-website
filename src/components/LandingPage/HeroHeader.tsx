@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Topbar from "../shared/Topbar";
+import { constants } from "../utils/constants";
 
 const HeroHeader = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -37,6 +38,13 @@ const HeroHeader = () => {
     // Cleanup the timer when the component unmounts
     return () => clearTimeout(timer);
   }, [isVisible]);
+
+  const handleScrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div>
@@ -84,6 +92,7 @@ const HeroHeader = () => {
                 className={(a) =>
                   `nav-item nav-link ${a.isActive ? "active" : ""}`
                 }
+                onClick={handleScrollTop}
               >
                 Home
               </NavLink>
@@ -92,6 +101,7 @@ const HeroHeader = () => {
                 className={(a) =>
                   `nav-item nav-link ${a.isActive ? "active" : ""}`
                 }
+                onClick={handleScrollTop}
               >
                 About
               </NavLink>
@@ -100,32 +110,36 @@ const HeroHeader = () => {
                 className={(a) =>
                   `nav-item nav-link ${a.isActive ? "active" : ""}`
                 }
+                onClick={handleScrollTop}
               >
                 Services
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 to="/blog"
                 className={(a) =>
                   `nav-item nav-link ${a.isActive ? "active" : ""}`
                 }
+                  onClick={handleScrollTop}
               >
                 Blog
-              </NavLink>
+              </NavLink> */}
               <NavLink
                 to="/contact"
                 className={(a) =>
                   `nav-item nav-link ${a.isActive ? "active" : ""}`
                 }
+                onClick={handleScrollTop}
               >
                 Contact
               </NavLink>
             </div>
-            <a
-              href="https://htmlcodex.com/startup-company-website-template"
+            <NavLink
+              to="/contact"
+              onClick={handleScrollTop}
               className="btn btn-secondary py-2 px-4 ms-3"
             >
               Free Quote
-            </a>
+            </NavLink>
           </div>
         </nav>
 
@@ -150,14 +164,14 @@ const HeroHeader = () => {
                   <h1 className="display-2 text-white mb-md-4 animated zoomIn">
                     Turning the Impossible into Possible.
                   </h1>
-                  <a
-                    href="quote.html"
+                  <NavLink
+                    to="/contact"
                     className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
                   >
                     Free Quote
-                  </a>
+                  </NavLink>
                   <a
-                    href=""
+                    href={`mailto:${constants.email}`}
                     className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"
                   >
                     Contact Us
@@ -179,14 +193,14 @@ const HeroHeader = () => {
                   <h1 className="display-2 text-white mb-md-4 animated zoomIn">
                     Innovate, Integrate, Elevate.
                   </h1>
-                  <a
-                    href="quote.html"
+                  <NavLink
+                    to="/contact"
                     className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
                   >
                     Free Quote
-                  </a>
+                  </NavLink>
                   <a
-                    href=""
+                    href={`mailto:${constants.email}`}
                     className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"
                   >
                     Contact Us

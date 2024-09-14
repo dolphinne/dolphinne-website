@@ -25,7 +25,7 @@ const LandingPage = () => {
       <RequestQuote />
       <Testimonials />
       <Team />
-      <LatestBlogs />
+      {/* <LatestBlogs /> */}
     </div>
   );
 };

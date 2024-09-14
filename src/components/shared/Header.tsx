@@ -38,6 +38,13 @@ const Header = ({ pageTitle, pageRoute }) => {
     return () => clearTimeout(timer);
   }, [isVisible]);
 
+  const handleScrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
       <div
@@ -84,6 +91,7 @@ const Header = ({ pageTitle, pageRoute }) => {
                 className={(a) =>
                   `nav-item nav-link ${a.isActive ? "active" : ""}`
                 }
+                onClick={handleScrollTop}
               >
                 Home
               </NavLink>
@@ -92,6 +100,7 @@ const Header = ({ pageTitle, pageRoute }) => {
                 className={(a) =>
                   `nav-item nav-link ${a.isActive ? "active" : ""}`
                 }
+                onClick={handleScrollTop}
               >
                 About
               </NavLink>
@@ -100,32 +109,36 @@ const Header = ({ pageTitle, pageRoute }) => {
                 className={(a) =>
                   `nav-item nav-link ${a.isActive ? "active" : ""}`
                 }
+                onClick={handleScrollTop}
               >
                 Services
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 to="/blog"
                 className={(a) =>
                   `nav-item nav-link ${a.isActive ? "active" : ""}`
                 }
+                onClick={handleScrollTop}
               >
                 Blog
-              </NavLink>
+              </NavLink> */}
               <NavLink
                 to="/contact"
                 className={(a) =>
                   `nav-item nav-link ${a.isActive ? "active" : ""}`
                 }
+                onClick={handleScrollTop}
               >
                 Contact
               </NavLink>
             </div>
-            <a
-              href="https://htmlcodex.com/startup-company-website-template"
+            <NavLink
+              to="/contact"
+              onClick={handleScrollTop}
               className="btn btn-secondary py-2 px-4 ms-3"
             >
               Free Quote
-            </a>
+            </NavLink>
           </div>
         </nav>
 

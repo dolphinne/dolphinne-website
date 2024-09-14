@@ -3,20 +3,26 @@ import Slider from "react-slick";
 
 const testimonials = [
   {
-    name: "John Smith",
-    title: "CEO, Tech Innovators",
+    name: "Paulo Wilson",
+    title: "Project Lead, Roy Sports",
     quote:
       "The team at the dolphinne transformed our outdated website into a modern, user-friendly platform. Our online traffic has increased significantly, and we've received numerous compliments from our clients.",
   },
   {
-    name: "Emily Johnson",
-    title: "Marketing Director, Creative Solutions",
+    name: "Elias Smith",
+    title: "Marketing Director, Robert Fine Jewellery",
     quote:
       "Thanks to the dolphinne's SEO services, our search engine rankings have improved dramatically. We've seen a noticeable increase in organic traffic and lead generation.",
   },
   {
-    name: "Michael Brown",
-    title: "Founder, Startup Hub",
+    name: "Kevin B",
+    title: "CEO, Streamfog",
+    quote:
+      "Integrating AI solutions into our processes has significantly improved our efficiency and decision-making. The dolphinne provided excellent support throughout the implementation.",
+  },
+  {
+    name: "Zenith S.",
+    title: "Founder, The Naz Creations",
     quote:
       "The app development services provided by the dolphinne were exceptional. The app is intuitive, fast, and has received great feedback from our users. Highly recommend their services!",
   },
@@ -27,28 +33,22 @@ const testimonials = [
       "We were struggling with data management until we partnered with the dolphinne. Their data analytics solutions have streamlined our operations and provided valuable insights into our business.",
   },
   {
-    name: "David Wilson",
-    title: "IT Director, Global Enterprises",
+    name: "Raj Desai",
+    title: "IT Director, Softcode Solutions",
     quote:
       "Cyber security was a major concern for us, but the dolphinne provided robust solutions that have given us peace of mind. Their team is knowledgeable and always available to assist.",
   },
   {
-    name: "Jessica Lee",
+    name: "Hetal Pankaj",
     title: "Owner, Boutique Designs",
     quote:
       "The graphic design services from the dolphinne have been outstanding. Our brand's visual identity has never looked better, and our customers love the new look.",
   },
   {
-    name: "Robert Martinez",
-    title: "Project Manager, Construction Pros",
+    name: "Pradeep Garg",
+    title: "Project Manager, Pace OS",
     quote:
       "Implementing cloud solutions with the dolphinne has been a game-changer for our business. The transition was smooth, and the benefits have been immense.",
-  },
-  {
-    name: "Linda Thompson",
-    title: "Head of Development, AI Innovations",
-    quote:
-      "Integrating AI solutions into our processes has significantly improved our efficiency and decision-making. The dolphinne provided excellent support throughout the implementation.",
   },
 ];
 
@@ -112,7 +112,7 @@ const Testimonials = () => {
                   <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                     <img
                       className="img-fluid rounded"
-                      src="img/testimonial-1.jpg"
+                      src="img/user.png"
                       style={{ width: 60, height: 60 }}
                     />
                     <div className="ps-4">

@@ -1,5 +1,6 @@
 import React from "react";
 import { constants } from "../utils/constants";
+import { NavLink } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -63,13 +64,13 @@ const AboutUs = () => {
                   <h4 className="text-primary mb-0">{constants.telephone}</h4>
                 </div>
               </div>
-              <a
-                href="quote.html"
+              <NavLink
+                to="/contact"
                 className="btn btn-primary py-3 px-5 mt-3 wow zoomIn"
                 data-wow-delay="0.9s"
               >
                 Request A Quote
-              </a>
+              </NavLink>
             </div>
             <div className="col-lg-5" style={{ minHeight: 500 }}>
               <div className="position-relative h-100">

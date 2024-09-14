@@ -1,5 +1,6 @@
 import React from "react";
 import { constants } from "../utils/constants";
+import { ContactUsForm } from "./ContactUsForm";
 
 const ContactUs = () => {
   return (
@@ -72,46 +73,7 @@ const ContactUs = () => {
         </div>
         <div className="row g-5">
           <div className="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-            <form>
-              <div className="row g-3">
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control border-0 bg-light px-4"
-                    placeholder="Your Name"
-                    style={{ height: 55 }}
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="email"
-                    className="form-control border-0 bg-light px-4"
-                    placeholder="Your Email"
-                    style={{ height: 55 }}
-                  />
-                </div>
-                <div className="col-12">
-                  <input
-                    type="text"
-                    className="form-control border-0 bg-light px-4"
-                    placeholder="Subject"
-                    style={{ height: 55 }}
-                  />
-                </div>
-                <div className="col-12">
-                  <textarea
-                    className="form-control border-0 bg-light px-4 py-3"
-                    rows={4}
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-                <div className="col-12">
-                  <button className="btn btn-primary w-100 py-3" type="submit">
-                    Send Message
-                  </button>
-                </div>
-              </div>
-            </form>
+            <ContactUsForm />
           </div>
           <div className="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
             <iframe
