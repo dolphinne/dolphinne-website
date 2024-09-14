@@ -27,6 +27,7 @@ export const ContactUsForm = () => {
       const email = formElements.from_email.value.trim();
       const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       const subject = formElements.from_subject.value.trim();
+      const message = formElements.message.value.trim();
 
       let valid = true;
 
@@ -43,6 +44,10 @@ export const ContactUsForm = () => {
       }
 
       if (!subject) {
+        valid = false;
+      }
+
+      if (!message) {
         valid = false;
       }
 
@@ -100,7 +105,7 @@ export const ContactUsForm = () => {
               name="from_name"
               type="text"
               className="form-control border-0 bg-light px-4"
-              placeholder="Your Name"
+              placeholder="Your Name *"
               style={{ height: 55 }}
               onChange={() => setSuccess({ isTrue: false, message: "" })}
             />
@@ -110,7 +115,7 @@ export const ContactUsForm = () => {
               name="from_email"
               type="email"
               className="form-control border-0 bg-light px-4"
-              placeholder="Your Email"
+              placeholder="Your Email *"
               style={{ height: 55 }}
               onChange={() => setSuccess({ isTrue: false, message: "" })}
             />
@@ -120,7 +125,7 @@ export const ContactUsForm = () => {
               name="from_subject"
               type="text"
               className="form-control border-0 bg-light px-4"
-              placeholder="Subject"
+              placeholder="Subject *"
               style={{ height: 55 }}
               onChange={() => setSuccess({ isTrue: false, message: "" })}
             />
@@ -130,7 +135,7 @@ export const ContactUsForm = () => {
               name="message"
               className="form-control border-0 bg-light px-4 py-3"
               rows={4}
-              placeholder="Message"
+              placeholder="Message *"
               onChange={() => setSuccess({ isTrue: false, message: "" })}
             ></textarea>
           </div>

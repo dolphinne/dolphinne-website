@@ -104,7 +104,7 @@ export const RequestAQouteForm = () => {
                 name="from_name"
                 type="text"
                 className="form-control bg-light border-0"
-                placeholder="Your Name"
+                placeholder="Your Name *"
                 style={{ height: 55 }}
                 onChange={() => setSuccess({ isTrue: false, message: "" })}
               />
@@ -114,7 +114,7 @@ export const RequestAQouteForm = () => {
                 type="email"
                 name="from_email"
                 className="form-control bg-light border-0"
-                placeholder="Your Email"
+                placeholder="Your Email *"
                 style={{ height: 55 }}
                 onChange={() => setSuccess({ isTrue: false, message: "" })}
               />
@@ -126,7 +126,7 @@ export const RequestAQouteForm = () => {
                 name="from_service"
                 onChange={() => setSuccess({ isTrue: false, message: "" })}
               >
-                <option selected>Select A Service</option>
+                <option selected>Select a Service *</option>
                 {listOfServices.map((service, index) => (
                   <option key={index} value={service}>
                     {service}
