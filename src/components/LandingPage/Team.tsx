@@ -50,7 +50,7 @@ const Team = () => {
                 </div>
               </div>
               <div className="text-center py-4">
-                <h4 className="text-primary">Pankaj Soni</h4>
+                <h4 className="text-primary">Pankaj Choksi</h4>
                 <p className="text-uppercase m-0">Co-founder | CEO</p>
               </div>
             </div>
@@ -125,7 +125,7 @@ const Team = () => {
               </div>
               <div className="text-center py-4">
                 <h4 className="text-primary">Kavita Purohit</h4>
-                <p className="text-uppercase m-0">Devlopers Lead</p>
+                <p className="text-uppercase m-0">Delivery Head</p>
               </div>
             </div>
           </div>
