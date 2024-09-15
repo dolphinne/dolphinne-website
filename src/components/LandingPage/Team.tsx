@@ -22,7 +22,7 @@ const Team = () => {
             <div className="team-item bg-light rounded overflow-hidden">
               <div className="team-img position-relative overflow-hidden">
                 <img className="img-fluid w-100" src="img/team-3.png" alt="" />
-                <div className="team-social">
+                {/* <div className="team-social">
                   <a
                     className="btn btn-lg btn-primary btn-lg-square rounded"
                     href=""
@@ -47,7 +47,7 @@ const Team = () => {
                   >
                     <i className="fab fa-linkedin-in fw-normal"></i>
                   </a>
-                </div>
+                </div> */}
               </div>
               <div className="text-center py-4">
                 <h4 className="text-primary">Pankaj Choksi</h4>
@@ -59,7 +59,7 @@ const Team = () => {
             <div className="team-item bg-light rounded overflow-hidden">
               <div className="team-img position-relative overflow-hidden">
                 <img className="img-fluid w-100" src="img/team-1.png" alt="" />
-                <div className="team-social">
+                {/* <div className="team-social">
                   <a
                     className="btn btn-lg btn-primary btn-lg-square rounded"
                     href=""
@@ -84,7 +84,7 @@ const Team = () => {
                   >
                     <i className="fab fa-linkedin-in fw-normal"></i>
                   </a>
-                </div>
+                </div> */}
               </div>
               <div className="text-center py-4">
                 <h4 className="text-primary">Abhimanyu Soni</h4>
@@ -96,7 +96,7 @@ const Team = () => {
             <div className="team-item bg-light rounded overflow-hidden">
               <div className="team-img position-relative overflow-hidden">
                 <img className="img-fluid w-100" src="img/team-2.png" alt="" />
-                <div className="team-social">
+                {/* <div className="team-social">
                   <a
                     className="btn btn-lg btn-primary btn-lg-square rounded"
                     href=""
@@ -121,7 +121,7 @@ const Team = () => {
                   >
                     <i className="fab fa-linkedin-in fw-normal"></i>
                   </a>
-                </div>
+                </div> */}
               </div>
               <div className="text-center py-4">
                 <h4 className="text-primary">Kavita Purohit</h4>
