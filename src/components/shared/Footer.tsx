@@ -29,30 +29,30 @@ const Footer = () => {
                   innovation.
                 </p>
                 <div className="d-flex mt-4">
-                  <a
+                  {/* <a
                     className="btn btn-primary me-3"
                     style={{ borderRadius: 6, fontSize: 20 }}
                     href="#"
                   >
                     <i className="fab fa-twitter fw-normal"></i>
-                  </a>
+                  </a> */}
                   <a
                     className="btn btn-primary me-3"
-                    href="#"
+                    href="https://www.facebook.com/profile.php?id=61565989406413"
                     style={{ borderRadius: 6, fontSize: 20 }}
                   >
                     <i className="fab fa-facebook-f fw-normal"></i>
                   </a>
                   <a
                     className="btn btn-primary me-3"
-                    href="#"
+                    href="https://www.linkedin.com/company/dolphinne"
                     style={{ borderRadius: 6, fontSize: 20 }}
                   >
                     <i className="fab fa-linkedin-in fw-normal"></i>
                   </a>
                   <a
                     className="btn btn-primary"
-                    href="#"
+                    href="https://www.instagram.com/the.dolphinne.tech"
                     style={{ borderRadius: 6, fontSize: 20 }}
                   >
                     <i className="fab fa-instagram fw-normal"></i>

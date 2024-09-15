@@ -33,36 +33,36 @@ const Topbar = () => {
             className="d-inline-flex align-items-center"
             style={{ height: 45 }}
           >
-            <a
+            {/* <a
               className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
               href=""
             >
               <i className="fab fa-twitter fw-normal"></i>
-            </a>
+            </a> */}
             <a
               className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-              href=""
+              href="https://www.facebook.com/people/The-Dolphinne-Technologies/61565989406413"
             >
               <i className="fab fa-facebook-f fw-normal"></i>
             </a>
             <a
               className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-              href=""
+              href="https://www.linkedin.com/company/dolphinne"
             >
               <i className="fab fa-linkedin-in fw-normal"></i>
             </a>
             <a
               className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-              href=""
+              href="https://www.instagram.com/the.dolphinne.tech"
             >
               <i className="fab fa-instagram fw-normal"></i>
             </a>
-            <a
+            {/* <a
               className="btn btn-sm btn-outline-light btn-sm-square rounded-circle"
               href=""
             >
               <i className="fab fa-youtube fw-normal"></i>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
