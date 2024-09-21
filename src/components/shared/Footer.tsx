@@ -8,7 +8,7 @@ const Footer = () => {
     <>
       {/* <Brands /> */}
       <div
-        className="container-fluid bg-dark text-light mt-5 wow fadeInUp"
+        className="container-fluid bg-dark text-light wow fadeInUp"
         data-wow-delay="0.1s"
       >
         <div className="container">

@@ -114,6 +114,15 @@ const HeroHeader = () => {
               >
                 Services
               </NavLink>
+              <NavLink
+                to="/portfolio"
+                className={(a) =>
+                  `nav-item nav-link ${a.isActive ? "active" : ""}`
+                }
+                onClick={handleScrollTop}
+              >
+                Portfolio
+              </NavLink>
               {/* <NavLink
                 to="/blog"
                 className={(a) =>

@@ -2608,9 +2608,9 @@ fieldset:disabled .btn {
 .btn-secondary:active,
 .btn-secondary.active,
 .show > .btn-secondary.dropdown-toggle {
-  color: #000;
-  background-color: #5dbd76;
-  border-color: #48b565;
+  color: #fff;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
 }
 .btn-check:checked + .btn-secondary:focus,
 .btn-check:active + .btn-secondary:focus,

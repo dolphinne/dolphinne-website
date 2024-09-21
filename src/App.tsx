@@ -13,6 +13,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Services from "./pages/Services";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio";
+import InstagramPost from "./pages/InstagramPost";
+import PortfolioDetails from "./pages/PortfolioDetails";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -33,6 +36,9 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/:id" element={<PortfolioDetails />} />
+          <Route path="/igp" element={<InstagramPost />} />
         </Route>
       </Routes>
       <Footer />

@@ -70,9 +70,9 @@ const Header = ({ pageTitle, pageRoute }) => {
             <h1 className="m-0">
               dolphinne.
               {isSticky ? (
-                <img src="favicon2.png" alt="" style={{ width: 70 }} />
+                <img src="/favicon2.png" alt="" style={{ width: 70 }} />
               ) : (
-                <img src="favicon.png" alt="" style={{ width: 70 }} />
+                <img src="/favicon.png" alt="" style={{ width: 70 }} />
               )}
             </h1>
           </Link>
@@ -112,6 +112,15 @@ const Header = ({ pageTitle, pageRoute }) => {
                 onClick={handleScrollTop}
               >
                 Services
+              </NavLink>
+              <NavLink
+                to="/portfolio"
+                className={(a) =>
+                  `nav-item nav-link ${a.isActive ? "active" : ""}`
+                }
+                onClick={handleScrollTop}
+              >
+                Portfolio
               </NavLink>
               {/* <NavLink
                 to="/blog"
@@ -154,10 +163,19 @@ const Header = ({ pageTitle, pageRoute }) => {
               <Link to="/" className="h5 text-white">
                 Home
               </Link>
-              <i className="far fa-circle text-white px-2"></i>
-              <Link to={`/${pageRoute}`} className="h5 text-white">
-                {pageRoute}
-              </Link>
+              {pageRoute.split("/").map((one, index) => (
+                <>
+                  <i className="far fa-circle text-white px-2"></i>
+                  <Link
+                    to={
+                      index === pageRoute.split("/").length - 1 ? "" : `/${one}`
+                    }
+                    className="h5 text-white"
+                  >
+                    {one}
+                  </Link>
+                </>
+              ))}
             </div>
           </div>
         </div>
