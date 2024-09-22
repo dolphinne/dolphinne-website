@@ -18,7 +18,8 @@ const AboutUs = () => {
                   About Us
                 </h5>
                 <h1 className="mb-0">
-                  The Best IT Solution With 8+ Years of Experience
+                  Your Strategic IT Partner: 5+ Years of Transformative
+                  Solutions
                 </h1>
               </div>
               <p className="mb-4">

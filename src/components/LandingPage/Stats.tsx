@@ -23,9 +23,9 @@ const Stats = () => {
                   ></i>
                 </div>
                 <div className="ps-4">
-                  <h5 className="text-white mb-0">Trusted Clients</h5>
+                  <h5 className="text-white mb-0">Served Clients</h5>
                   <h1 className="text-white mb-0" data-toggle="counter-up">
-                    150+
+                    20+
                   </h1>
                 </div>
               </div>
@@ -47,7 +47,7 @@ const Stats = () => {
                 <div className="ps-4">
                   <h5 className="text-primary mb-0">Projects Done</h5>
                   <h1 className="mb-0" data-toggle="counter-up">
-                    245+
+                    50+
                   </h1>
                 </div>
               </div>
