@@ -145,89 +145,167 @@ export const portfolioItems = [
     title: "Bookify",
     image: "img/portfolio/tile/bookify.jpg",
     categories: ["Space Booking", "Web App", "Mobile App"],
-    detailPageImgs: [""],
-    description: "",
-    techStacks: [
+    detailPageImgs: [
       {
-        technology: "",
-        iconUrl: "",
+        url: "img/portfolio/bookify.jpg",
+        caption: "Bookify dashboard (web)",
+      },
+      {
+        url: "img/portfolio/bookify_2.png",
+        caption: "Bookify mobile app (react native)",
       },
     ],
-    challenges: "",
-    solution: "",
-    results: "",
-    duration: "",
+    description:
+      "Bookify is a web and mobile app platform that offers seamless space booking solutions. Designed to cater to a wide range of businesses, from co-working spaces to conference rooms, Bookify enables users to find, reserve, and manage spaces efficiently. The platform also integrates features like real-time availability tracking, booking management, and notifications. We leveraged modern technologies like React and Node.js to ensure a responsive, user-friendly interface and backend functionality.",
+    techStacks: [
+      { technology: "React.js", iconUrl: "img/icons/react.png" },
+      { technology: "Node.js", iconUrl: "img/icons/node.png" },
+      { technology: "MongoDB", iconUrl: "img/icons/mongodb.png" },
+      { technology: "MySQL", iconUrl: "img/icons/mysql.png" },
+      { technology: "Express.js", iconUrl: "img/icons/express.png" },
+      { technology: "Redux", iconUrl: "img/icons/redux.png" },
+      { technology: "React Native", iconUrl: "img/icons/react.png" },
+      { technology: "AWS Services", iconUrl: "img/icons/aws.png" },
+    ],
+    challenges:
+      "Developing Bookify presented several significant challenges, primarily in ensuring real-time availability for both web and mobile platforms. The system had to manage thousands of simultaneous booking requests while reflecting up-to-date availability without delays or errors. Given the large user base, scalability was a key issue, and building a backend system that could handle high concurrency while maintaining accuracy was critical. Additionally, integrating complex booking scenarios such as cancellations, rescheduling, and refunds posed a challenge in creating a user interface that remained intuitive while offering advanced features. Striking a balance between functionality and simplicity was essential to avoid overwhelming the user.<br/><br/>On the mobile side, ensuring a smooth user experience on devices with limited performance capacity was challenging. Users expected features like offline booking, push notifications, and seamless navigation. Syncing data in real-time across web and mobile platforms without causing performance issues required thoughtful architecture. Furthermore, managing over 100 canvas templates for space booking reports added complexity, as we needed to ensure quick rendering and high-quality exports for PDFs and slides. The admin panel also posed a challenge, requiring flexibility for space owners to manage multiple locations and provide detailed reports efficiently.",
+    solution:
+      "To address these challenges, we implemented WebSockets to handle real-time communication between clients and the server, ensuring that booking data was always up-to-date and accurate. We designed the backend using MongoDB for fast data retrieval and MySQL for complex relational queries, allowing us to efficiently scale the system as demand grew. To keep the user interface simple yet powerful, we created a modular design, allowing users to perform actions like cancellations or rescheduling with minimal clicks. The mobile app was optimized for low-performance devices using React Native, and offline capabilities were introduced to ensure users could make bookings without an internet connection. Push notifications were also implemented to enhance the user experience.<br/><br/>For handling the multiple canvas templates, we optimized rendering with lazy loading and efficient memory management, allowing users to generate reports and export them in high quality without delays. The admin panel was built with a focus on flexibility, enabling space owners to update availability and pricing, as well as track booking performance using detailed reports. The entire system was designed to sync data across platforms in real-time, ensuring consistency between the web and mobile apps.",
+    results:
+      "As a result of these efforts, Bookify was able to efficiently handle thousands of booking requests without performance issues, offering users real-time availability and a seamless booking experience across platforms. The app successfully balanced advanced booking features with an intuitive UI, leading to a positive user experience, even for complex tasks like cancellations or refunds. Scalability was achieved through the use of WebSockets and optimized database architecture, allowing Bookify to expand its user base without sacrificing performance.<br/><br/>The mobile app was praised for its offline capabilities and responsive design, while the admin panel provided space owners with a comprehensive toolset for managing their spaces effectively. The system's ability to handle multiple templates for booking summaries allowed users to create detailed reports effortlessly, and the export functionality for PDFs and slides performed smoothly. Ultimately, Bookify improved user engagement, streamlined space management, and positioned itself as a reliable solution in the competitive space-booking market.",
+    duration: "8 months",
+    directLink: "https://bookify.space",
   },
   {
     id: "sam2",
-    title: "Segment Anything 2",
+    title: "SAM2 ft. Streamfog",
     image: "img/portfolio/tile/segment.png",
     categories: ["Machine Learning", "Object Tracking", "Web App"],
-    detailPageImgs: [""],
-    description: "",
-    techStacks: [
+    detailPageImgs: [
       {
-        technology: "",
-        iconUrl: "",
+        url: "img/portfolio/sam2.png",
+        caption: "SAM2 app with selected objects to track its movement",
+      },
+      {
+        url: "img/portfolio/sam2_2.jpg",
+        caption: "Segmentation process",
       },
     ],
-    challenges: "",
-    solution: "",
-    results: "",
-    duration: "",
+    description:
+      "The Segment Anything 2 (SAM2) ft. Streamfog Reimplementation project is designed to offer a simplified and enhanced UI for video segmentation, providing real-time video object tracking. Leveraging React Vite for the frontend and Python for the backend, this project focuses on improving accessibility while maintaining the accuracy of video segmentation tasks. It was developed in collaboration with Streamfog, emphasizing innovative solutions in video technology.",
+    techStacks: [
+      { technology: "React.js", iconUrl: "img/icons/react.png" },
+      { technology: "Vite.js", iconUrl: "img/icons/vite.svg" },
+      { technology: "Python", iconUrl: "img/icons/python.png" },
+      { technology: "AWS EC2", iconUrl: "img/icons/ec2.png" },
+      { technology: "TensorFlow", iconUrl: "img/icons/tensorflow.png" },
+    ],
+    challenges:
+      "Reimplementing Meta's SAM2 architecture presented significant challenges, especially when adapting it to create a user-friendly version with a more intuitive interface. One of the main hurdles was simplifying the underlying complexity of SAM2's memory mechanism, mask propagation, and occlusion handling, ensuring users could interact with it seamlessly without sacrificing performance. The need to maintain the robustness of SAM2’s real-time video segmentation while making the UI accessible for users who may not be familiar with complex AI tools added another layer of difficulty. Additionally, hosting a high-performance backend capable of handling heavy segmentation operations in real time was critical, especially when scaling across longer videos and more diverse object classes.<br/><br/>Another challenge was ensuring the system could accurately handle ambiguity and occlusion during video segmentation, just as SAM2 does in more sophisticated environments. Balancing computational efficiency with accuracy was key, particularly given the system's need to operate in real-time, with a smooth experience across different devices and browsers. The requirement for real-time response while integrating high-performance AI models in the backend was especially difficult, given the use of AWS EC2 to handle large-scale operations.",
+    solution:
+      "To address these challenges, the project retained much of SAM2’s underlying architecture, while focusing on enhancing usability by refining the interface. The React Vite frontend was designed to prioritize a smooth user experience, allowing users to easily input prompts, interact with video frames, and adjust segmentation masks. The lightweight nature of Vite allowed for efficient handling of frontend interactions, minimizing lag during operations.<br/><br/>On the backend, Python was employed for managing segmentation logic, alongside AWS EC2 for robust, scalable performance. The backend system was fine-tuned to optimize response time without compromising accuracy, particularly when managing SAM2’s memory and mask propagation capabilities across video frames. Integrating AWS services ensured that the system could handle a large volume of segmentation tasks while maintaining seamless synchronization between frontend actions and backend computations. Overall, these strategies enhanced the performance and accessibility of the project while maintaining the core functionalities of SAM2.",
+    results:
+      "The reimplementation successfully resulted in a more accessible version of Meta's SAM2, with a user-friendly interface that simplified complex segmentation tasks. Users could interact with the system in real-time, generating accurate segmentation masks across video frames without needing to understand the intricacies of SAM2's underlying architecture. This led to faster, more efficient video annotations and improved ease of use for individuals working with video segmentation tasks.<br/><br/>The project also improved scalability, handling large video datasets and producing accurate segmentation even under difficult conditions, such as object occlusion and ambiguity. The use of AWS EC2 for hosting provided reliable, high-performance backend operations, ensuring the system could handle multiple concurrent segmentation requests with minimal delay. As a result, the reimplementation not only maintained the performance and accuracy of Meta’s SAM2 but also significantly improved the overall user experience.",
+    duration: "~2 months",
+    directLink: "https://github.com/streamfog/sam2-app",
   },
   {
-    id: "dynamic-pos",
+    id: "dynamicPos",
     title: "Dynamic POS",
     image: "img/portfolio/tile/dynamic-pos.jpg",
-    categories: ["Billing System", "Desktop App"],
-    detailPageImgs: [""],
-    description: "",
-    techStacks: [
+    categories: ["Restaurant Management", "Desktop App"],
+    detailPageImgs: [
       {
-        technology: "",
-        iconUrl: "",
+        url: "img/portfolio/dynamicpos.jpg",
+        caption: "Dynamic POS table booking (floor wise)",
+      },
+      {
+        url: "img/portfolio/dynamicpos_2.jpg",
+        caption: "Dynamic POS managing orders (dining table wise)",
       },
     ],
-    challenges: "",
-    solution: "",
-    results: "",
-    duration: "",
+    description:
+      "Dynamic POS is a desktop software application designed for billing and managing tables in restaurants. It enables restaurant managers to book tables for customers, manage food items, and handle billing seamlessly. The software supports payment processing via UPI, cards, or cash and allows bill splitting between customers, enhancing the dining experience.",
+    techStacks: [
+      { technology: "Electron.js", iconUrl: "img/icons/electronjs.svg" },
+      { technology: "React.js", iconUrl: "img/icons/react.png" },
+      { technology: "ASP.NET", iconUrl: "img/icons/aspnet.png" },
+      { technology: "MySQL", iconUrl: "img/icons/mysql.png" },
+      { technology: "Node.js", iconUrl: "img/icons/node.png" },
+      { technology: "HTML5", iconUrl: "img/icons/html5.png" },
+      { technology: "CSS3", iconUrl: "img/icons/css3.png" },
+    ],
+    challenges:
+      "Developing a user-friendly interface for managing restaurant operations posed several significant challenges. One of the primary difficulties was ensuring that the application facilitated smooth interactions while dealing with complex data processes. Restaurant managers need to quickly access and manage a wide range of information, from table availability to menu items, without being overwhelmed by technical complexities. This necessitated an intuitive design that allowed users to navigate the application seamlessly while performing various tasks simultaneously. Moreover, ensuring that the application remained responsive under heavy usage—especially during peak hours—required meticulous planning and implementation of efficient data handling strategies.<br/><br/>In addition, integrating secure payment systems was another critical challenge. The application must support various payment methods, including UPI, cards, and cash, while ensuring compliance with security standards to protect sensitive customer information. Real-time updates of table availability further complicated the project, as the system had to manage simultaneous transactions and bookings without errors. Implementing a solution that maintained accurate data synchronization across all devices, while providing immediate feedback to users, was essential for enhancing the overall user experience. Addressing these challenges required a deep understanding of both user needs and technical limitations, along with a commitment to delivering a reliable and efficient system.",
+    solution:
+      "To tackle these challenges, the application was developed using Electron.js, which enabled the creation of a robust desktop environment tailored for restaurant management. This choice allowed for native performance while providing the flexibility to integrate various web technologies. The user interface was crafted using React.js, ensuring a responsive and intuitive design that prioritized ease of use. Features such as drag-and-drop functionality for table management and streamlined access to menu items were incorporated to enhance usability. Additionally, careful attention was given to the layout and visual elements, making the application approachable for users who may not be tech-savvy.<br/><br/>The backend was constructed with ASP.NET, offering secure transaction capabilities and efficient data management. This framework was instrumental in ensuring that payment processes were executed smoothly and securely. MySQL was utilized as the database solution, allowing for effective handling of diverse data types, including menu items, customer bookings, and billing information. Furthermore, the canvas feature was a significant innovation, enabling managers to visually design and organize table layouts according to the restaurant's architecture. This functionality not only improved operational efficiency but also empowered managers to adapt quickly to changing seating arrangements, thus optimizing the dining experience.",
+    results:
+      "Dynamic POS has successfully transformed the management of restaurant operations by significantly streamlining processes that previously relied on manual methods and paperwork. Managers can now easily add tables, handle customer bookings, and process payments—all within a single integrated application. This consolidation of functions has eliminated redundancies, allowing staff to focus on providing excellent service rather than getting bogged down by administrative tasks. The application's intuitive design has led to a smoother workflow, enabling restaurant managers to operate more efficiently and respond to customer needs promptly.<br/><br/>The impact of Dynamic POS on billing accuracy and customer satisfaction has been notable. The system has greatly reduced wait times for customers, as managers can quickly access information and process transactions seamlessly. Enhanced accuracy in billing has minimized errors, further improving the dining experience. With better table turnover rates and increased customer satisfaction, restaurant managers are better equipped to meet the demands of their patrons, ultimately leading to improved business performance. As a result, Dynamic POS has not only enhanced operational efficiency but has also contributed to a more enjoyable dining experience for customers.",
+    duration: "~6 months",
   },
   {
     id: "motofiniti",
     title: "Motofiniti",
     image: "img/portfolio/tile/motofiniti.jpg",
     categories: ["Marketplace", "Web App", "Mobile App"],
-    detailPageImgs: [""],
-    description: "",
-    techStacks: [
+    detailPageImgs: [
       {
-        technology: "",
-        iconUrl: "",
+        url: "img/portfolio/motofiniti.jpg",
+        caption: "Motofiniti web app landing page",
+      },
+      {
+        url: "img/portfolio/motofiniti_2.png",
+        caption: "Motofiniti mobile app",
       },
     ],
-    challenges: "",
-    solution: "",
-    results: "",
-    duration: "",
+    description:
+      "MotoFiniti is an online platform specifically designed for buying and selling various types of vehicles and vehicle parts. This comprehensive marketplace allows private parties and dealers to list or browse new and used cars, trucks, motorcycles, boats, and other vehicles. Users can connect effectively through advanced search tools and valuable information sharing, creating a user-friendly experience dedicated to the 'moto-world' trading market.",
+    techStacks: [
+      { technology: "PHP", iconUrl: "img/icons/php.png" },
+      { technology: "HTML5", iconUrl: "img/icons/html5.png" },
+      { technology: "CSS3", iconUrl: "img/icons/css3.png" },
+      { technology: "React Native", iconUrl: "img/icons/react.png" },
+      { technology: "MySQL", iconUrl: "img/icons/mysql.png" },
+    ],
+    challenges:
+      "Building a robust marketplace for diverse vehicle types posed several challenges, particularly in ensuring effective search functionality and user experience across both web and mobile platforms. The application needed to accommodate listings for a wide variety of vehicles and parts, which required handling extensive data efficiently. Users needed to be able to navigate through numerous categories and listings easily, ensuring they could find exactly what they were looking for without unnecessary complexity.<br/><br/>Additionally, ensuring a secure and seamless transaction process between buyers and sellers was crucial for building trust in the platform. As the marketplace dealt with significant financial transactions and personal information, maintaining high levels of security was essential. The challenge was not only to protect user data but also to instill confidence in users regarding the safety and reliability of transactions conducted on the platform.",
+    solution:
+      "To tackle these challenges, we developed a web app using PHP, HTML, and CSS, which provided a solid foundation for both frontend and backend operations. This combination allowed for flexibility in development and ease of maintenance while ensuring a robust system architecture. The mobile app was built using React Native, allowing for a consistent user experience across Android and iOS devices. This approach enabled us to create a unified interface that catered to users' needs, whether they accessed the platform through a web browser or a mobile device.<br/><br/>We implemented advanced search algorithms to help users filter through listings effectively, enhancing the usability of the platform. The system was meticulously designed to ensure secure transactions, with integrated payment gateways and data encryption. This setup enabled buyers and sellers to connect effortlessly while sharing important vehicle information, thus enhancing the marketplace's value and usability. By focusing on these elements, we created a reliable platform that met user expectations while providing a comprehensive marketplace for vehicles and parts.",
+    results:
+      "Motofiniti successfully established itself as a one-stop marketplace for the 'moto-world,' allowing users to connect efficiently while buying or selling vehicles and parts. The platform's intuitive design and effective search functionality facilitated smoother transactions, enabling users to find listings quickly and easily. This resulted in reduced time spent searching for vehicles and increased engagement from both buyers and sellers, further enriching the marketplace experience.<br/><br/>Moreover, the application significantly improved overall user satisfaction, becoming a trusted platform for vehicle enthusiasts and dealers. Its responsive design and robust features contributed to a seamless user experience, making it easier for individuals to manage listings, communicate with potential buyers or sellers, and complete transactions securely. By effectively streamlining the process of buying and selling within the automotive sector, MotoFiniti has solidified its position as a go-to application in the marketplace for vehicles and vehicle parts.",
+    duration: "~8 months",
+    directLink: "https://motofiniti.com",
   },
   {
     id: "rum-factory",
     title: "Rum Factory",
     image: "img/portfolio/tile/rum_factory.jpg",
     categories: ["Ecommerce", "UI/UX Development"],
-    detailPageImgs: [""],
-    description: "",
-    techStacks: [
+    detailPageImgs: [
       {
-        technology: "",
-        iconUrl: "",
+        url: "img/portfolio/rum_factory.jpg",
+        caption: "Rum Factory landing page UI",
+      },
+      {
+        url: "img/portfolio/rum_factory_2.jpg",
+        caption: "Rum Factory UI 2",
       },
     ],
-    challenges: "",
-    solution: "",
-    results: "",
-    duration: "",
+    description:
+      "Rum Factory is an online e-commerce website dedicated to providing a seamless shopping experience for rum enthusiasts. The project focused on UI development to create an engaging and visually appealing platform that showcases various rum products effectively.",
+    techStacks: [
+      { technology: "Figma", iconUrl: "img/icons/figma.png" },
+      { technology: "Photoshop", iconUrl: "img/icons/photoshop.png" },
+      { technology: "HTML5", iconUrl: "img/icons/html5.png" },
+      { technology: "CSS3", iconUrl: "img/icons/css3.png" },
+      { technology: "JavaScript", iconUrl: "img/icons/js.png" },
+    ],
+    challenges:
+      "Creating a visually appealing and user-friendly interface for an e-commerce platform presented challenges, especially in ensuring that the design effectively showcased the products while maintaining ease of navigation. Additionally, achieving a cohesive aesthetic that aligns with the brand's identity was crucial to engaging users and encouraging purchases.",
+    solution:
+      "The UI development utilized tools like Figma for designing prototypes and mockups, ensuring a clear vision for the final product. HTML and CSS were employed to bring the designs to life, allowing for a responsive and visually appealing layout. Photoshop was used for image editing and enhancement, ensuring high-quality visuals for product displays.",
+    results:
+      "The Rum Factory project successfully delivered a polished UI that enhances the online shopping experience for customers. The final design not only improved user engagement but also effectively highlighted the range of rum products available. Feedback from users indicated a positive response to the aesthetics and functionality of the site, contributing to a strong brand presence in the e-commerce space.",
+    duration: "~2 months",
   },
 ];

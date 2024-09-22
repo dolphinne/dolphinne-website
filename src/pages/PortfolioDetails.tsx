@@ -83,13 +83,15 @@ const PortfolioDetails = () => {
               <div className="duration">
                 <strong>{item.duration}</strong>
               </div>
-              <a
-                target="_blank"
-                className="btn btn-primary directLinkBtn mt-5"
-                href={item.directLink}
-              >
-                GO TO SITE LINK
-              </a>
+              {item.directLink && (
+                <a
+                  target="_blank"
+                  className="btn btn-primary directLinkBtn mt-5"
+                  href={item.directLink}
+                >
+                  GO TO SITE LINK
+                </a>
+              )}
             </>
           )}
         </div>

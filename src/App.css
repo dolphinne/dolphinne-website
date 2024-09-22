@@ -109,9 +109,11 @@
 }
 .portfolio-details-img {
   margin: 25px 0;
+  text-align: center;
 }
 .portfolio-details-img img {
-  width: 100%;
+  max-width: 100%;
+  width: auto;
   border-radius: 20px;
   border: 1px solid #dddddd;
 }
