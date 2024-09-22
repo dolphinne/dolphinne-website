@@ -32,8 +32,7 @@ const Header = ({ pageTitle, pageRoute }) => {
       if (isVisible) {
         setIsVisible(false);
       }
-    }, 1);
-
+    }, 500);
     // Cleanup the timer when the component unmounts
     return () => clearTimeout(timer);
   }, [isVisible]);
