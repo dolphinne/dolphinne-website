@@ -13,8 +13,6 @@ const PortfolioDetails = () => {
     }
   }, []);
 
-  console.log(item, "T");
-
   return (
     <>
       <Header pageTitle={item?.title} pageRoute={`portfolio/${id}`} />

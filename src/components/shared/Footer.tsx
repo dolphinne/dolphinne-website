@@ -4,6 +4,14 @@ import { constants } from "../utils/constants";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const handleScrollTop = () => {
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 500);
+  };
   return (
     <>
       {/* <Brands /> */}
@@ -84,19 +92,35 @@ const Footer = () => {
                     <h3 className="text-light mb-0">Quick Links</h3>
                   </div>
                   <div className="link-animated d-flex flex-column justify-content-start">
-                    <Link className="text-light mb-2" to="/">
-                      <i className="bi bi-arrow-right text-primary me-2"></i>
-                      Home
-                    </Link>
-                    <Link className="text-light mb-2" to="/about">
+                    <Link
+                      className="text-light mb-2"
+                      to="/about"
+                      onClick={handleScrollTop}
+                    >
                       <i className="bi bi-arrow-right text-primary me-2"></i>
                       About Us
                     </Link>
-                    <Link className="text-light mb-2" to="/services">
+                    <Link
+                      className="text-light mb-2"
+                      to="/services"
+                      onClick={handleScrollTop}
+                    >
                       <i className="bi bi-arrow-right text-primary me-2"></i>Our
                       Services
                     </Link>
-                    <Link className="text-light mb-2" to="/about">
+                    <Link
+                      className="text-light mb-2"
+                      to="/portfolio"
+                      onClick={handleScrollTop}
+                    >
+                      <i className="bi bi-arrow-right text-primary me-2"></i>
+                      Portfolio
+                    </Link>
+                    <Link
+                      className="text-light mb-2"
+                      to="/about"
+                      onClick={handleScrollTop}
+                    >
                       <i className="bi bi-arrow-right text-primary me-2"></i>
                       Meet The Team
                     </Link>
@@ -104,7 +128,11 @@ const Footer = () => {
                       <i className="bi bi-arrow-right text-primary me-2"></i>
                       Latest Blog
                     </a> */}
-                    <Link className="text-light" to="/contact">
+                    <Link
+                      className="text-light"
+                      to="/contact"
+                      onClick={handleScrollTop}
+                    >
                       <i className="bi bi-arrow-right text-primary me-2"></i>
                       Contact Us
                     </Link>
